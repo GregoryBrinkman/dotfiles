@@ -1,0 +1,12 @@
+!! Larger history limit
+URxvt*saveLines: 1000000
+
+!! Appearance
+URxvt*termName: rxvt-unicode
+URxvt*scrollBar: false
+URxvt*background: black
+URxvt*foreground: gray
+
+!! Font
+URxvt*font: xft:Inconsolata:Regular:pixelsize=14
+URxvt*letterSpace: -1
