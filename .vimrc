@@ -1,3 +1,7 @@
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+
 syntax enable 		  "enable syntax processing
 
 set smarttab        "gotta be smart about it
@@ -47,7 +51,8 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 
 set laststatus=2 "always show status command
 
-map 0 ^ "Remap VIM 0 to first non-blank character
+"Remap VIM 0 to first non-blank character
+map 0 ^
 
 " Delete trailing white space on save, useful for some filetypes ;)
 fun! CleanExtraSpaces()
@@ -84,4 +89,5 @@ function! VisualSelection(direction, extra_filter) range
     let @/ = l:pattern
     let @" = l:saved_reg
 endfunction
+
 
